@@ -1,10 +1,10 @@
 #!/usr/local/bin/python
 
-# script to flatten file structure and prepend file names with the parent directories
+# script to rename files from csv - first column=oldname, second column=newname
 
 import os, csv, sys
 
-with open('../khiz.csv','rb') as csvfile:
+with open('../list.csv','rb') as csvfile:
     reader = csv.reader(csvfile, delimiter = ',')
     for row in reader:
        oldname = row[0]
