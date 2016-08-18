@@ -1,5 +1,7 @@
 #!/usr/local/bin/python
 
+# script to flatten file structure and prepend file names with the parent directories
+
 import os, csv, sys
 
 with open('../khiz.csv','rb') as csvfile:
