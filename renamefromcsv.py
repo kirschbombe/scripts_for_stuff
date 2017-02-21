@@ -4,7 +4,7 @@
 
 import os, csv, sys
 
-with open('../list.csv','rb') as csvfile:
+with open('../rename.csv','rb') as csvfile:
     reader = csv.reader(csvfile, delimiter = ',')
     for row in reader:
        oldname = row[0]
